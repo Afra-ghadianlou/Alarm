@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #4a98f4;
+    height: 100vh;
+}
+
+.container{
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 200px auto;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.container h1{
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.content{
+    width: 100%;
+}
+
+.container .content.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.controls{
+    display: inline-block;
+    width: calc(100% / 2 - 5px);
+}
+
+.controls select{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.container button{
+    width: 100%;
+    background: #4a98f4;
+    border: 0;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}

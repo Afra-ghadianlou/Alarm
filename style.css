@@ -57,3 +57,9 @@ body{
     border-radius: 5px;
     margin-top: 20px;
 }
+
+@media (max-width : 350px) {
+    .container{
+        width: 230px;
+    }
+}

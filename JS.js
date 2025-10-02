@@ -77,4 +77,5 @@ function checkState(state){
         ringtone.pause()
         SetAlarmBtn.innerText = 'Set Alarm'
     }
+    //تو حالت پیش فرض مقدار متغیر نوست هست
 }

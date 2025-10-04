@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    width: 450px;
+    width: 350px;
     background: #fff;
     border-radius: 10px;
     margin: 200px auto;
@@ -58,8 +58,8 @@ body{
     margin-top: 20px;
 }
 
-@media (max-width : 350px) {
+/* @media (max-width : 430px) {
     .container{
-        width: 230px;
+        width: 350px;
     }
-}
+} */

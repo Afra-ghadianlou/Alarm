@@ -6,7 +6,7 @@ const Content = document.querySelector('.content')
 //اعلان متغیر
 let  AlarmTime , AlarmState = 'noset';
 //وارد کردن موزیک
-const ringtone = new Audio("./file/ringtone.m4a")
+const ringtone = new Audio("./file/ringtone.mp3")
 
 //ایجاد حلقه برای ساعت
 for(let i = 23 ; i >= 0 ; i--){

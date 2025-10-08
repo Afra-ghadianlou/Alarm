@@ -8,10 +8,24 @@ let  AlarmTime , AlarmState = 'noset';
 //وارد کردن موزیک
 const ringtone = new Audio("./file/ringtone.mp3")
 //وارد کردن مزیک و نوشتن فانکشن برای اینکه صدا در مویابل پخش بشه
-let audio = new Audio("alarm.mp3");
-document.body.addEventListener("touchstart", () => {
-  audio.play();
-}, { once: true });
+// let audio = new Audio("./file/ringtone.mp3");
+// document.body.addEventListener("touchstart", () => {
+//   audio.play();
+// }, { once: true });
+
+
+
+
+  const audio = new Audio("alarm.mp3");
+
+  document.getElementById("setAlarm").addEventListener("click", () => {
+    // اینجا تعامل کاربر اتفاق افتاده، پس play مجازه
+    audio.play().catch((err) => {
+      console.log("پخش صدا در موبایل بلاک شد:", err);
+    });
+  });
+
+
 
 //ایجاد حلقه برای ساعت
 for(let i = 23 ; i >= 0 ; i--){

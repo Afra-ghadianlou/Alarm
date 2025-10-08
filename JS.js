@@ -7,6 +7,11 @@ const Content = document.querySelector('.content')
 let  AlarmTime , AlarmState = 'noset';
 //وارد کردن موزیک
 const ringtone = new Audio("./file/ringtone.mp3")
+//وارد کردن مزیک و نوشتن فانکشن برای اینکه صدا در مویابل پخش بشه
+let audio = new Audio("alarm.mp3");
+document.body.addEventListener("touchstart", () => {
+  audio.play();
+}, { once: true });
 
 //ایجاد حلقه برای ساعت
 for(let i = 23 ; i >= 0 ; i--){
